@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAR Virtual Makeup Try-On</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>WebAR Virtual Makeup Try-On</h1>
+    <div id="video-container">
+        <video id="video" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+    </div>
+    <div id="makeup-controls">
+        <button id="lipstick-btn">Lipstick</button>
+        <button id="eyeshadow-btn">Eyeshadow</button>
+        <button id="blush-btn">Blush</button>
+        <button id="clear-btn">Clear Makeup</button>
+    </div>
+
+    <!-- face-api.js library -->
+    <script defer src="https://unpkg.com/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <!-- App JavaScript -->
+    <script defer src="app.js"></script>
+</body>
+</html>
